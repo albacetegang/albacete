@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <body bgcolor="black">
+<head>
+
+        <script language=javascript>
+		var rev = "fwd";
+		function titlebar(val){
+			var msg  = "albacete.cf | AlbaceteGang <3";
+			var res = " ";
+			var speed = 100;
+			var pos = val;
+			msg = "| "+msg+" |";
+			var le = msg.length;
+			if(rev == "fwd"){
+				if(pos < le){
+					pos = pos+1;
+					scroll = msg.substr(0,pos);
+					document.title = scroll;
+					timer = window.setTimeout("titlebar("+pos+")",speed);
+				}
+				else {
+					rev = "bwd";
+					timer = window.setTimeout("titlebar("+pos+")",speed);
+				}
+			}
+			else {
+				if(pos > 0) {
+					pos = pos-1;
+					var ale = le-pos;
+					scrol = msg.substr(ale,le);
+					document.title = scrol;
+					timer = window.setTimeout("titlebar("+pos+")",speed);
+				}
+				else {
+					rev = "fwd";
+					timer = window.setTimeout("titlebar("+pos+")",speed);
+				}
+			}
+		}
+		titlebar(0);
+	</script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>albacete.cf</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+	<link rel="stylesheet" href="css/stylesheet2.css">
+</head>
+<body>
+
+
+<h1 style="color:#ffffff"; >Instalar Virtualbox</h1>
+<a href="https://www.virtualbox.org/wiki/Downloads" style="color:#ffffff"; target="_blank">Descargar Virtualbox</a>
+<br>
+<a href="https://www.microsoft.com/es-es/software-download/windows10" style="color:#ffffff"; target="_blank">Descargar windows 10 </a>
+<p>
+	<h2 style="color:#ffffff";>Aqui dejo un video de como instalar virtualbox + instalar windows 10 en la maquina virtual</h2>
+	<video src="videos/virtualbox.mp4" width=320  height=240 controls poster="vistaprevia.jpg">
+		Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br>
+		La versión descargable está disponible en <a href="URL">Enlace</a>. 
+		</video>
+
+	
+</p>
+
+    <A style="color:#ffffff"; HREF="index.html">Inicio</A>
+
+</body>
+</html>
